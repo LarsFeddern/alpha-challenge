@@ -1,9 +1,15 @@
 version: '3.8'
 services:
+  nginx:
+    container_name: nginx
+    build: ./docker/nginx
+    ports:
+      - "80:80"
+    restart: always
+    depends_on:
+      - frontend
   frontend:
     build: .
-    container_name: react
-    ports:
-      - '80:3000'
+    container_name: frontend
     stdin_open: true
     tty: true

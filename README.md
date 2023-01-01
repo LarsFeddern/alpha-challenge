@@ -7,7 +7,7 @@
     - [Aufgabe E - Docker-ImplementierungAufgaben](#aufgabe-e---docker-implementierungaufgaben)
 
 ---
-Dieses Projekt ist im Rahmen der Hanseatic Bank Code Challange der Alpha Crew entstanden.
+Dieses Projekt entstand aus einer Code-Challange von der Alpha Crew.
 
 <br/><br/>
 ## Aufgaben
@@ -55,3 +55,4 @@ cd alpha-challenge
 docker-compose up
 ```
 3. Aufruf des Frontends via Browser unter localhost:80
+
