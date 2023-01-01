@@ -1,0 +1,32 @@
+[
+    {
+        "quote": "Shut up, brain. I got friends now. I don't need you anymore.",
+        "character": "Lisa Simpson",
+        "image": "https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FLisaSimpson.png?1497567512083",
+        "characterDirection": "Right"
+    },
+    {
+        "quote": "Last night's \"Itchy & Scratchy\" was, without a doubt, the worst episode ever. Rest assured that I was on the Internet within minutes, registering my disgust throughout the world.",
+        "character": "Comic Book Guy",
+        "image": "https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FComicBookGuy.png?1497567511970",
+        "characterDirection": "Right"
+    },
+    {
+        "quote": "That's where I saw the leprechaun...He told me to burn things.",
+        "character": "Ralph Wiggum",
+        "image": "https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FRalphWiggum.png?1497567511523",
+        "characterDirection": "Left"
+    },
+    {
+        "quote": "Oh boy, sleep! That's where I'm a viking!",
+        "character": "Ralph Wiggum",
+        "image": "https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FRalphWiggum.png?1497567511523",
+        "characterDirection": "Left"
+    },
+    {
+        "quote": "Nothing you say can upset us. We're the MTV generation.",
+        "character": "Bart Simpson",
+        "image": "https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FBartSimpson.png?1497567511638",
+        "characterDirection": "Right"
+    }
+]
