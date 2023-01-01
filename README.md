@@ -44,3 +44,14 @@ Dieses Projekt ist im Rahmen der Hanseatic Bank Code Challange der Alpha Crew en
 
 <br/><br/>
 ### Aufgabe E - Docker-ImplementierungAufgaben
+1. Repository clonen
+```text
+git clone https://github.com/LarsFeddern/alpha-challenge.git
+```
+
+2. Docker-Compose zum bauen und starten verwenden
+```bash
+cd alpha-challenge
+docker-compose up
+```
+3. Aufruf des Frontends via Browser unter localhost:80
