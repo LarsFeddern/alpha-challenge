@@ -9,22 +9,6 @@ import {
   BrowserRouter
 } from "react-router-dom";
 
-/*
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App.App />,
-  },
-  {
-    path: "/Login",
-    element: <App.App />,
-  },
-  {
-    path: "/quotes",
-    element: <Hero />,
-  },
-]);*/
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

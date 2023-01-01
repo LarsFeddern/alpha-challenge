@@ -86,19 +86,6 @@
 
 }
 
-.Login-pass-reset{
-  margin: -10px 0 15px 5px;
-}
-
-.Login-pass-reset a{
-  color: #2691d9;
-}
-
-.Login-pass-reset:hover{
-  text-decoration: underline;
-
-}
-
 input[type="submit"]{
   width: 100%;
   height: 50%;

@@ -36,9 +36,6 @@ export default function Login(){
               <span></span>
               <label>Password</label>
             </div>
-            <div className='Login-pass-reset'>
-              <a href='#'>Forgot Password?</a>
-            </div>
             <input type="submit" id='submit' value="Login"></input>
             <div className='Login-signup-link'>
               Not a member? <a href='#'>Signup</a>
