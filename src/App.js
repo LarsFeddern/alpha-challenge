@@ -1,9 +1,9 @@
-import { React, useState } from "react";
+import { React, useEffect } from "react";
 import Quotes from "./pages/Quotes";
 import Login from "./pages/Login"
 import ProtectedRoutes from "./components/ProtectedRoute/ProtectedRoute"
 
-import { Route , Routes, Navigate, Navigation } from "react-router-dom";
+import { Route , Routes } from "react-router-dom";
 
 export default function App(){
     /*
@@ -22,17 +22,20 @@ export default function App(){
     )
   
     const checkCookie = (name, value) => (
-        getCookieValue(name) == value ? true : false
+        getCookieValue(name) === value ? true : false
     )
+
+    useEffect(() => { 
+        console.log("hi")
+    });
 
     return(
         <div className="App">  
             <Routes>
                 <Route path="/login" element={<Login />} />
-                <Route index element={<Login />} />
-                <Route path="/quotes" element={<ProtectedRoutes valid={checkCookie("jwt", "MyUnsecureToken")}/>}>
-                    <Route index element={<Quotes />} />
-                    <Route path=":id" element={<Quotes />} />
+                <Route path="/" element={<ProtectedRoutes valid={checkCookie("jwt", "MyUnsecureToken")}/>}>
+                    <Route path="/quotes" element={<Quotes />} />
+                    <Route path="/quotes/:id" element={<Quotes />} />
                 </Route>
                 <Route path="*" element={<h1>There's nothing here: 404!</h1>} />
             </Routes>    

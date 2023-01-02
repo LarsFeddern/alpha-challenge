@@ -51,6 +51,7 @@ WIP
 ### Aufgabe C - Backend 1
 ### Login Validation
 Nicht mit Backend umgesetzt. Stattdessen temporärer und schneller workaround. Nutze beim Login den Nutzer "admin" mit Password "admin". Ein SignUp funktioniert noch nicht. 
+Leider funktioniert die Navigation nach dem Login noch nicht ideal. Muss das Parent DOM Element vermutlich refreshen?
 
 <br/><br/>
 ### Aufgabe D - Backend 2

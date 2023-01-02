@@ -5,7 +5,7 @@ import {
   
   const ProtectedRoutes = ( { valid }) => {
     let auth = {'token':valid}
-    
+    console.log(auth)
     return (
     auth.token ? <Outlet /> : <Navigate to="/login" />)
   };

@@ -5,7 +5,7 @@ import SimpsonsLogo from "../../images/simpsons-logo.png";
 export default function Logo(){
 return(
     <div className="Logo">
-        <img src={SimpsonsLogo}></img>
+        <img src={SimpsonsLogo} alt="SimpsonsLogo"></img>
     </div>
 )
 }

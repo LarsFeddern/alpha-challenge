@@ -14,25 +14,22 @@ function httpGet(theUrl)
 
 function CheckParams(defaultValue){
     let { id } = useParams();
-    id = (id == undefined) ? defaultValue : id;
+    id = (id === undefined) ? defaultValue : id;
     id = parseInt(id)
     id = (isNaN(id)) ? defaultValue : id;
     return id 
 }
 
 export default function Cards(){
-    let id = CheckParams(defaultCardCount)
+    const id = CheckParams(defaultCardCount)
 
-    let response = []
-    let cards = []
-    response = JSON.parse(httpGet(`https://thesimpsonsquoteapi.glitch.me/quotes?count=${id}`));
-    cards = response
+    let response = JSON.parse(httpGet(`https://thesimpsonsquoteapi.glitch.me/quotes?count=${id}`));
 
-    let view = new Map()
-    cards.forEach(element => {
-        view.set(
+    let view = []
+    response.forEach(element => {
+        view.push(
             <div className="Card">
-                <img src={element.image} className="Card-image"></img>
+                <img src={element.image} className="Card-image" alt={element.character}></img>
                 <h3 className="Card-name">{element.character}</h3>
                 <hr></hr>
                 <div className="Card-stats">
