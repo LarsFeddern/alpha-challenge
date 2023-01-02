@@ -1,16 +1,18 @@
-.Logo {
-  width: 15%;
-  height: auto;
-  position: fixed;
-  top: 10%;
+.Page {
+  width: 100vh;
+  height: 100vh;
+}
+.LoginLogo {
+  position: absolute;
+  top: 15%;
   left: 50%;
-  transform: translate(-50%,-50%);
-  margin-left: -0px;
+  transform: translate(-50%, -50%);
 
 }
-.Logo img{
-  width: 100%;
-  height: auto;
+.LoginLogo img{
+  
+  height: 100%;
+  width: auto;
 }
 
 .Login {

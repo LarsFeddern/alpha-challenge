@@ -7,7 +7,7 @@ var defaultCardCount = 5
 function httpGet(theUrl)
 {
     var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.open( "GET", theUrl, false ); // synchronous request
     xmlHttp.send( null );
     return xmlHttp.responseText;
 }
@@ -16,7 +16,6 @@ function CheckParams(defaultValue){
     let { id } = useParams();
     id = (id == undefined) ? defaultValue : id;
     id = parseInt(id)
-    console.log(typeof id, id)
     id = (isNaN(id)) ? defaultValue : id;
     return id 
 }
@@ -35,6 +34,7 @@ export default function Cards(){
             <div className="Card">
                 <img src={element.image} className="Card-image"></img>
                 <h3 className="Card-name">{element.character}</h3>
+                <hr></hr>
                 <div className="Card-stats">
                     <span className="Card-stats-quote">{element.quote}</span>
                 </div>
@@ -42,11 +42,10 @@ export default function Cards(){
     )});
 
     return(
-        <div>
+        <>
             <div className="Cards">
                 {view}
-            </div>
-            
-        </div>
+            </div>   
+        </>
     )
 }

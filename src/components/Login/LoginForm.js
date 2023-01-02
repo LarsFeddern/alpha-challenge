@@ -1,26 +1,32 @@
 import React, { useEffect, useRef } from 'react';
-import './Login.css';
+import './LoginForm.css';
 import SimpsonsLogo from "../../images/simpsons-logo.png"
 //import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Navigate, useNavigate } from "react-router-dom";
 
-
-export default function Login(){ 
+export default function LoginForm(){ 
   const usernameRef = useRef()
   const passwordRef = useRef()
-
-  function onSubmit(event){
-    event.preventDefault()
-    console.log({
-      username: usernameRef.current.value,
-      password: passwordRef.current.value 
-    })
-
+  
+  const navigate = useNavigate();
+  
+ 
+  function onSubmit(e){
+    // The preventDefault() method of the Event interface tells the user agent that 
+    // if the event does not get explicitly handled, its default action should not be taken as it normally would be.
+    e.preventDefault()
+    //TODO: As long as there is no working backend the credentials are checked like this
+    if (usernameRef.current.value == "admin" && passwordRef.current.value == "admin"){
+      document.cookie = `jwt=MyUnsecureToken;max-age=60;localhost`
+      setTimeout(() => {  navigate('/quotes'); }, 1000);
+    }
+  
   }
-
+  
 
   return(
       <div className='Page'>
-        <div className='Logo'>
+        <div className='LoginLogo'>
           <img src={SimpsonsLogo} alt='The Simpsons Logo'></img>
         </div>
         <div className="Login">

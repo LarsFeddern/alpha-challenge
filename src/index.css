@@ -8,6 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(130deg, #eb7364, #5a0035);
+  background-attachment: fixed;
   height: 100vh;
   overflow: hidden;
   overflow-y:scroll;

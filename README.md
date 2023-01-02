@@ -8,6 +8,10 @@
 
 ---
 Dieses Projekt entstand aus einer Code-Challange von der Alpha Crew.
+Die vollständige Umsetzung dieser Aufgabe ist nicht abgeschlossen.
+
+Aktuell wurde kein eigenes Backend angebunden (php + laravel) da der Fokus für mich erstmal auf dem Frontend lag und dieses und React besser zu verstehen.
+Anstatt einer Login und Quotes Backend-Schnittstelle wurden Alternativen umgesetzt. Für den Login z.B ein temp. Cookie, welcher einen es ermöglicht ProctectedRoutes aufzurufen.    
 
 <br/><br/>
 ## Aufgaben
@@ -20,14 +24,16 @@ Dieses Projekt entstand aus einer Code-Challange von der Alpha Crew.
 <br/><br/>
 #### Software 
 <img src="./docs/img/software-architecture.png">
+TODO: User Tabelle hinzufügen für Login mit Username und Passwort-Hash 
 
 <br/><br/>
 #### Sequenzdiagramm - Login
 <img src= "./docs/img/sequenzdiagramm-login.drawio.png">
 
+
 <br/><br/>
 #### Sequenzdiagramm - Quotes
-
+WIP
 
 <br/><br/>
 ### Aufgabe B - Frontend
@@ -35,12 +41,21 @@ Dieses Projekt entstand aus einer Code-Challange von der Alpha Crew.
 <img src="./docs/img/Frontend-layout.drawio.png">
 
 <br/><br/>
+### Layout-Umsetzung
+<center>Login</center>
+<img src="./docs/img/frontend-login.png">
+<center>Quotes</center>
+<img src="./docs/img/frontend-quotes.png">
+
+<br/><br/>
 ### Aufgabe C - Backend 1
 ### Login Validation
+Nicht mit Backend umgesetzt. Stattdessen temporärer und schneller workaround. Nutze beim Login den Nutzer "admin" mit Password "admin". Ein SignUp funktioniert noch nicht. 
 
 <br/><br/>
 ### Aufgabe D - Backend 2
 ### Simpsons API
+Nicht mit Backend umgesetzt. Aktuell spricht das Frontend die API an und liefert jedes Mal neue 5 Quotes.
 
 <br/><br/>
 ### Aufgabe E - Docker-ImplementierungAufgaben
