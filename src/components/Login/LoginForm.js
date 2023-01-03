@@ -33,32 +33,32 @@ export default function LoginForm(){
   if (auth === true){
     return (<Navigate to="/quotes" replace={true} />)
   }else{
-  return(
-      <div className='Page'>
-        <div className='LoginLogo'>
-          <img src={SimpsonsLogo} alt='The Simpsons Logo'></img>
+    return(
+        <div className='Page'>
+          <div className='LoginLogo'>
+            <img src={SimpsonsLogo} alt='The Simpsons Logo'></img>
+          </div>
+          <div className="Login">
+            <h1>Login</h1>
+            <form onSubmit={onSubmit} id='form'/*method='post'*/>
+              <div className='Login-text-field'>
+                <input type="text" id='username' ref={usernameRef} required></input>
+                <span></span>
+                <label>Username</label>
+              </div>
+              <div className='Login-text-field'>
+                <input type="password" id='password' ref={passwordRef} required></input>
+                <span></span>
+                <label>Password</label>
+              </div>
+              <input type="submit" id='submit' value="Login"></input>
+              <div className='Login-signup-link'>
+                Not a member? <a href='/'>Signup</a>
+              </div>
+              </form>
+          </div>
         </div>
-        <div className="Login">
-          <h1>Login</h1>
-          <form onSubmit={onSubmit} id='form'/*method='post'*/>
-            <div className='Login-text-field'>
-              <input type="text" id='username' ref={usernameRef} required></input>
-              <span></span>
-              <label>Username</label>
-            </div>
-            <div className='Login-text-field'>
-              <input type="password" id='password' ref={passwordRef} required></input>
-              <span></span>
-              <label>Password</label>
-            </div>
-            <input type="submit" id='submit' value="Login"></input>
-            <div className='Login-signup-link'>
-              Not a member? <a href='/'>Signup</a>
-            </div>
-            </form>
-        </div>
-      </div>
-    )
-}
+      )
+  }
 }
 
