@@ -23,6 +23,10 @@ export default function LoginForm(){
        //state update will force site to rerender
       document.cookie = `jwt=MyUnsecureToken;max-age=60;localhost`
       setAuth(true)
+    }else{
+      document.getElementById('username').value = ""
+      document.getElementById('password').value = ""
+      window.alert("Login failed.");
     }
   }
   
