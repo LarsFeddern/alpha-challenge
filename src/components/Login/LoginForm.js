@@ -1,30 +1,34 @@
 import React, { useRef, useState} from 'react';
 import './LoginForm.css';
 import SimpsonsLogo from "../../images/simpsons-logo.png"
-//import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import { useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 export default function LoginForm(){ 
-  const usernameRef = useRef()
-  const passwordRef = useRef()
-  
-  const navigate = useNavigate();
- 
- 
+  //Refs persists between renders of the component
+  // Ref will not update the component, when the Ref updates 
+  const usernameRef = useRef("")
+  const passwordRef = useRef("")
+  const [auth, setAuth] = useState(() => document.cookie.match('(^|;)\\s*' + "jwt" + '\\s*=\\s*([^;]+)')?.pop() ? true : false);
+  const users = [{ username: "admin", password: "admin" }];
+
   function onSubmit(e){
     // The preventDefault() method of the Event interface tells the user agent that 
     // if the event does not get explicitly handled, its default action should not be taken as it normally would be.
+    // Stop form from submitting until I dont have an Login API
     e.preventDefault()
+
     //TODO: As long as there is no working backend the credentials are checked like this
-    if (usernameRef.current.value === "admin" && passwordRef.current.value === "admin"){
+    const account = users.find((user) => user.username === usernameRef.current.value);
+    if (account && account.password === passwordRef.current.value) {
+       //state update will force site to rerender
       document.cookie = `jwt=MyUnsecureToken;max-age=60;localhost`
-      
-      navigate('/quotes');
+      setAuth(true)
     }
-  
   }
   
-
+  if (auth === true){
+    return (<Navigate to="/quotes" replace={true} />)
+  }else{
   return(
       <div className='Page'>
         <div className='LoginLogo'>
@@ -52,5 +56,5 @@ export default function LoginForm(){
       </div>
     )
 }
-
+}
 

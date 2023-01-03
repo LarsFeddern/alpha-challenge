@@ -23,7 +23,7 @@ function CheckParams(defaultValue){
 export default function Cards(){
     const id = CheckParams(defaultCardCount)
 
-    let response = JSON.parse(httpGet(`https://thesimpsonsquoteapi.glitch.me/quotes?count=${id}`));
+    const response = JSON.parse(httpGet(`https://thesimpsonsquoteapi.glitch.me/quotes?count=${id}`));
 
     let view = []
     response.forEach(element => {
