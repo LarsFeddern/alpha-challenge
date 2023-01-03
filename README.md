@@ -18,13 +18,8 @@ Anstatt einer Login und Quotes Backend-Schnittstelle wurden Alternativen umgeset
 
 <br/><br/>
 ### Aufgabe A - Schaubild
-#### Infrastruktur
+#### Architekturen 
 <img src="./docs/img/AlphaProject.drawio.png">
-
-<br/><br/>
-#### Software 
-<img src="./docs/img/software-architecture.png">
-TODO: User Tabelle hinzufügen für Login mit Username und Passwort-Hash 
 
 <br/><br/>
 #### Sequenzdiagramm - Login
@@ -33,7 +28,7 @@ TODO: User Tabelle hinzufügen für Login mit Username und Passwort-Hash
 
 <br/><br/>
 #### Sequenzdiagramm - Quotes
-WIP
+<img src="./docs/img/simpsons-quotes.drawio.png">
 
 <br/><br/>
 ### Aufgabe B - Frontend
@@ -51,7 +46,6 @@ WIP
 ### Aufgabe C - Backend 1
 ### Login Validation
 Nicht mit Backend umgesetzt. Stattdessen temporärer und schneller workaround. Nutze beim Login den Nutzer "admin" mit Password "admin". Ein SignUp funktioniert noch nicht. 
-Leider funktioniert die Navigation nach dem Login noch nicht ideal. Muss das Parent DOM Element vermutlich refreshen?
 
 <br/><br/>
 ### Aufgabe D - Backend 2
