@@ -1,4 +1,4 @@
-# Hanseatic Bank Code Challenge
+# Alpha Crew Code Challenge
 - [Aufgaben](#aufgaben)
 	- [Aufgabe A - Schaubild](#aufgabe-a---schaubild)
 	- [Aufgabe B - Frontend](#aufgabe-b---frontend)
