@@ -10,7 +10,7 @@
 Dieses Projekt entstand aus einer Code-Challange von der Alpha Crew.
 Die vollständige Umsetzung dieser Aufgabe ist nicht abgeschlossen.
 
-Aktuell wurde kein eigenes Backend angebunden (php + laravel) da der Fokus für mich erstmal auf dem Frontend lag und dieses und React besser zu verstehen.
+Aktuell wurde kein eigenes Backend angebunden (php + laravel) da der Fokus für mich erstmal auf dem Frontend lag um dieses und React besser zu verstehen.
 Anstatt einer Login und Quotes Backend-Schnittstelle wurden Alternativen umgesetzt. Für den Login z.B ein temp. Cookie, welcher einen es ermöglicht ProctectedRoutes aufzurufen.    
 
 <br/><br/>
